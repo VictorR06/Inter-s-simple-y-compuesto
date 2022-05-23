@@ -1,0 +1,104 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --small: 1.2rem;
+    --medium: 1.8rem;
+    --long: 2.4rem;
+
+    --primary-color: #71C9CE;
+    --primary-color-soft: #A6E3E9;
+    --secondary-color: #CBF1F5;
+    --secondary-color-soft: #E3FDFD;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.main-container {
+    width: 85vw;
+    max-width: 70rem;
+
+    background-color: var(--secondary-color);
+    border-radius: .8rem;
+    box-shadow: .1rem .1rem 1rem #ccc;
+}
+
+.main-container h2 {
+    margin: 2rem 0;
+
+    font-size: var(--long);
+    text-align: center;
+
+    color: var(--primary-color);
+}
+
+.form-interest__value {
+    display: grid;
+    gap: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    margin: 0 1.5rem;
+}
+
+.form-interest__value .input {
+    padding: 1.5rem;
+
+    font-size: var(--medium);
+    font-weight: bold;
+    text-align: center;
+
+    color: var(--primary-color-soft);
+    background-color: var(--secondary-color-soft);
+    border: none;
+    outline: 0;
+    border-radius: 1rem;
+}
+
+.form-interest__value .input:hover {
+    box-shadow: .1rem .1rem 1rem .1rem var(--primary-color-soft);
+}
+
+.form-interest__value .input::placeholder {
+    font-size: 1.4rem;
+
+    color: var(--primary-color-soft);
+}
+
+.form-interest__buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem 0;
+}
+
+.form-interest__buttons .button {
+    width: 30%;
+    padding: 1rem;
+
+    font-size: var(--small);
+    font-weight: bold;
+
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 1.2rem;
+
+    cursor: pointer;
+}
+
+.form-interest__buttons .button:hover {
+    box-shadow: .2rem .2rem .1rem var(--primary-color-soft);
+}
+
+#result {
+    margin-bottom: 1.5rem;
+
+    font-size: var(--medium);
+    text-align: center;
+
+    color: var(--primary-color);
+}
